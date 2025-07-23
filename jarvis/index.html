@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baljot Singh | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+            color: #1a237e;
+        }
+        header {
+            background: #ede7f6;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(80, 0, 120, 0.10), 0 1.5px 0 #b39ddb;
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            transform: translateZ(0);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #512da8;
+            text-shadow: 0 2px 8px rgba(80,0,120,0.10);
+        }
+        h2 {
+            color: #1a237e;
+            border-bottom: 2px solid #b39ddb;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 1px 4px rgba(80,0,120,0.07);
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 12px 48px rgba(80, 0, 120, 0.15), 0 2px 8px #ede7f6;
+            padding: 2rem;
+            transform: perspective(900px) rotateY(-2deg) scale(1.01);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .container:hover {
+            box-shadow: 0 24px 64px rgba(80, 0, 120, 0.22), 0 4px 16px #ede7f6;
+            transform: perspective(900px) rotateY(2deg) scale(1.025);
+        }
+        .section {
+            margin-bottom: 2.5rem;
+            background: #f8f6ff;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(80,0,120,0.06);
+            padding: 1.2rem 1rem;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .section:hover {
+            box-shadow: 0 6px 24px rgba(80,0,120,0.13);
+            transform: translateY(-2px) scale(1.01);
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        .info-list li {
+            margin-bottom: 0.5rem;
+        }
+        .contact {
+            background: #ede7f6;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(80,0,120,0.08);
+        }
+        a {
+            color: #512da8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #1a237e;
+        }
+        .profile-pic {
+            width: 220px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 32px;
+            border: 4px solid #ede7f6;
+            margin: 1.2rem auto 1rem auto;
+            display: block;
+            box-shadow: 0 8px 32px rgba(80,0,120,0.18), 0 2px 8px #ede7f6;
+            transition: box-shadow 0.3s, transform 0.3s;
+            background: #fff;
+        }
+        .profile-pic:hover {
+            box-shadow: 0 16px 48px rgba(80,0,120,0.25), 0 4px 16px #ede7f6;
+            transform: scale(1.03) rotateY(2deg);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            .profile-pic {
+                width: 100%;
+                height: auto;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Baljot Singh</h1>
+        <img src="mypic.JPG" alt="Baljot Singh" class="profile-pic">
+        <p style="color:#1a237e; font-size:1.2rem;">Video & Photo Editor | Trader</p>
+    </header>
+    <div class="container">
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Baljot Singh, a passionate video and photo editor with 1 year of professional experience. I am also an active trader, specializing in Nifty options for the past 3 years. I love combining creativity with analytical skills to deliver outstanding results in both media and financial markets.</p>
+        </section>
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <ul class="info-list">
+                <li><strong>Video Editing:</strong> 1 year of hands-on experience in editing, post-production, and creative storytelling.</li>
+                <li><strong>Photo Editing:</strong> Skilled in retouching, color correction, and digital enhancements.</li>
+                <li><strong>Trading:</strong> 3 years of experience trading Nifty options, with a focus on strategy and risk management.</li>
+            </ul>
+        </section>
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <ul class="info-list">
+                <li>Video Editing (Adobe Premiere Pro, cap Cut Pro, etc.)</li>
+                <li>Photo Editing (Adobe Photoshop, Lightroom)</li>
+                <li>Options Trading (Nifty, Technical Analysis, Risk Management)</li>
+                <li>Creative Storytelling</li>
+                <li>Attention to Detail</li>
+            </ul>
+        </section>
+        <section class="section contact" id="contact">
+            <h2>Contact</h2>
+            <ul class="info-list">
+                <li>
+                    <!-- Gmail Official SVG -->
+                    <svg style="vertical-align:middle;margin-right:6px;" width="22" height="22" viewBox="0 0 48 48"><g><path fill="#4285F4" d="M42 39.5V8.5c0-2.21-1.79-4-4-4H10c-2.21 0-4 1.79-4 4v31c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4z"/><path fill="#34A853" d="M44 14.5v23c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4v-23l20 13 20-13z"/><path fill="#FBBC05" d="M44 14.5v23c0 2.21-1.79 4-4 4H8c-2.21 0-4-1.79-4-4v-23l20 13 20-13z"/><path fill="#EA4335" d="M44 14.5v-6c0-2.21-1.79-4-4-4H8c-2.21 0-4 1.79-4 4v6l20 13 20-13z"/></g></svg>
+                    <strong>Email:</strong> <a href="mailto:jattbad328@gmail.com">jattbad328@gmail.com</a>
+                </li>
+                <li>
+                    <!-- Phone Official SVG -->
+                    <svg style="vertical-align:middle;margin-right:6px;" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.5a1 1 0 01-1 1C6.48 21 3 17.52 3 13.5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" fill="#34A853"/></svg>
+                    <strong>Phone:</strong> <a href="tel:9465661767">9465661767</a>
+                </li>
+                <li>
+                    <!-- Instagram Official Colorful Logo -->
+                    <svg style="vertical-align:middle;margin-right:6px;" width="22" height="22" viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="insta-gradient" cx="30%" cy="107%" r="150%" fx="30%" fy="107%">
+                                <stop offset="0%" stop-color="#fdf497"/>
+                                <stop offset="5%" stop-color="#fdf497"/>
+                                <stop offset="45%" stop-color="#fd5949"/>
+                                <stop offset="60%" stop-color="#d6249f"/>
+                                <stop offset="90%" stop-color="#285AEB"/>
+                            </radialGradient>
+                        </defs>
+                        <rect width="448" height="448" rx="100" fill="url(#insta-gradient)"/>
+                        <path d="M224.1 141c-45.6 0-82.9 37.3-82.9 82.9s37.3 82.9 82.9 82.9 82.9-37.3 82.9-82.9-37.3-82.9-82.9-82.9zm0 136.2c-29.4 0-53.3-23.9-53.3-53.3s23.9-53.3 53.3-53.3 53.3 23.9 53.3 53.3-23.9 53.3-53.3 53.3zm104.4-137.1c0 10.2-8.3 18.5-18.5 18.5s-18.5-8.3-18.5-18.5 8.3-18.5 18.5-18.5 18.5 8.3 18.5 18.5zm49.6 18.7c-1.2-25.6-7.1-48.3-26.2-67.4C334.3 7.1 311.6 1.2 286 0c-25.6-1.2-48.3 7.1-67.4 26.2C200.1 45.3 194.2 68 195.4 93.6c1.2 25.6 7.1 48.3 26.2 67.4 19.1 19.1 41.8 25 67.4 26.2 25.6 1.2 48.3-7.1 67.4-26.2 19.1-19.1 25-41.8 26.2-67.4zm-48.6 48.6c-13.2 13.2-30.7 20.5-49.2 19.7-18.5-.8-36-8.5-49.2-21.7-13.2-13.2-20.5-30.7-19.7-49.2.8-18.5 8.5-36 21.7-49.2 13.2-13.2 30.7-20.5 49.2-19.7 18.5.8 36 8.5 49.2 21.7 13.2 13.2 20.5 30.7 19.7 49.2-.8 18.5-8.5 36-21.7 49.2z" fill="#fff"/>
+                    </svg>
+                    <strong>Instagram:</strong> <a href="https://instagram.com/baljotchohan_01" target="_blank">baljotchohan_01</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html> 
